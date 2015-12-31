@@ -1,0 +1,33 @@
+<h1 class="title" data-bind="title"></h1>
+
+<h3 id="down" class="title" data-bind="titles.downs"></h3>
+<ul class="list-nostyle">
+  <li class="down" data-foreach-down="downs">
+    <span class="label" data-bind="down.group"></span>
+    <span class="value" data-bind="down.device"></span>   
+    <p class="message" data-bind="down.message"></p>
+  </li>
+</ul>
+
+<h3 id="acknowledged" class="title" data-bind="titles.acknowledged"></h3>
+<ul class="list-nostyle" data-title="Server Status">
+  <li class="acknowledged" data-foreach-acknowledged="acknowledgeds">
+    <span class="label" data-bind="acknowledged.group"></span>
+    <span class="value" data-bind="acknowledged.device"></span>  
+    <p class="message" data-bind="acknowledged.message"></p>
+  </li>
+</ul>
+
+<h3 id="warning" class="title" data-debug="true" data-bind="titles.warnings"></h3>
+<ul  class="list-nostyle">
+  <li class="warning" data-foreach-warning="warnings">
+    <span class="label" data-bind="warning.group"></span>
+    <span class="value" data-bind="warning.device"></span>  
+    <p class="message" data-bind="warning.message"></p>
+  </li>
+</ul>
+
+<h3 id="notification" class="title" data-bind="titles.notification"></h3>
+
+<p class="more-info" data-bind="moreinfo"></p>
+<p class="updated-at" data-bind="updatedAtMessage"></p>

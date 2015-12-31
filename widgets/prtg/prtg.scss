@@ -1,0 +1,97 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #1d9fe3;
+$value-color:       #fff;
+
+$down-background-color-0:  #BE3803;
+$down-background-color-100:  #590B00;
+$acknowledged-background-color:  #DA781F;
+$warning-background-color:  #B88D38;
+
+$alert-time: 600ms;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$label-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+$down-color:       rgba(140, 21, 44, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-list styles
+// ----------------------------------------------------------------------------
+.widget-prtg {
+
+  background-color: $background-color;
+  vertical-align: top;
+
+  .title {
+    color: $title-color;
+  }
+
+  ol, ul {
+    margin: 0 15px;
+    text-align: left;
+    color: $label-color;
+  }
+
+  ol {
+    list-style-position: inside;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  .list-nostyle {
+    list-style: none;
+  }
+
+  .label {
+    color: $label-color;
+  }
+
+  .value {
+    float: right;
+    margin-left: 12px;
+    font-weight: 600;
+    color: $value-color;
+  }
+
+  .message {
+    font-size: 12px;
+  }
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
+}
+
+.prtg_down {
+    -webkit-animation: alert $alert-time infinite alternate;
+    -moz-animation: alert $alert-time infinite alternate;
+    -o-animation: alert $alert-time infinite alternate;
+    animation: alert $alert-time infinite alternate;
+}
+
+.prtg_acknowledged {
+    background-color: $acknowledged-background-color;
+}
+
+.prtg_warning {
+    background-color: $warning-background-color;
+}
+
+@keyframes alert {
+  0% {
+    background-color: $down-background-color-0;
+  }
+  
+  100% {
+    background-color: $down-background-color-100;
+  }
+}
