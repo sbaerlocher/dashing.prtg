@@ -29,6 +29,10 @@ To include the widget in a dashboard, add the following snippet to the dashboard
 ### 1.0
 
 * Initial release
+
+### 1.1
+
+* fix bug in prtg.rb
  
 ## Contributor
 

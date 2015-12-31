@@ -2,9 +2,9 @@
 require 'rest-client'
 require 'json'
 
-prtgurl = 'https://prtg.paessler.com'
-prtgusername = 'demo'
-prtgpassword = 'demodemo'
+prtgurl = ''
+prtgusername = ''
+prtgpassword = ''
 prtgacknowledged = 'true'
 prtgwarning = 'true'
 
