@@ -8,6 +8,7 @@ $down-background-color-0:  #BE3803;
 $down-background-color-100:  #590B00;
 $acknowledged-background-color:  #DA781F;
 $warning-background-color:  #B88D38;
+$unusual-background-color:  #B88D38;
 
 $alert-time: 600ms;
 
@@ -84,6 +85,10 @@ $down-color:       rgba(140, 21, 44, 0.7);
 
 .prtg_warning {
     background-color: $warning-background-color;
+}
+
+.prtg_unusuals {
+    background-color: $unusual-background-color;
 }
 
 @keyframes alert {
